@@ -1,0 +1,82 @@
+/* Base styles */
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust as needed */
+    background-color: #ffffff; /* Add a background color for clarity */
+}
+
+.left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Adjust as needed */
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fcf5f3;
+    height: 100px;
+    padding: 0 20px; /* Adjust as needed */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px; /* Adjust as needed */
+    gap: 10px;
+}
+
+.logo img {
+    max-width: 60px; /* Use max-width for responsive images */
+}
+
+.register {
+    background-color: #fece51;
+    padding: 10px 20px;
+    margin: 10px; /* Adjust as needed */
+}
+
+a {
+    transition: transform 0.4s ease;
+     /* Changed 'scale' to 'transform' */
+}
+
+a:hover {
+    transform: scale(1.05); /* Corrected the hover effect */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto; /* Allow height to adjust */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .left, .right {
+        flex: auto; /* Allow items to take full width */
+        justify-content: center; /* Center content in columns */
+        text-align: center; /* Center text in columns */
+        gap: 10px; /* Adjust gap between items */
+    }
+
+    .logo {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .logo img {
+        max-width: 50px; /* Adjust image size */
+    }
+
+    .register {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+}
