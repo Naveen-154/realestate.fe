@@ -1,14 +1,21 @@
 import React from 'react'
-import './App.css'
-import Navbar from './Components/Navbar'
-
+import '../src/layout.scss'
+import Navbar from './Components/NavbarComponent/Navbar'
+import HomePage from './Routes/HomePageRoute/HomePage'
 const App = () => {
   return (
-    <React.Fragment >
+  <React.Fragment>
     <div className='layout'>
+      <div className='navbar'>
       <Navbar/>
+      </div>
+    <div className='content'>
+    <HomePage/>
     </div>
-    </React.Fragment>
+    
+    </div>
+  </React.Fragment>
+    
   )
 }
 
