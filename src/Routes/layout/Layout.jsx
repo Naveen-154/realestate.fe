@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import '../../Routes/layout/layout.scss'
 import Navbar from'../../Components/NavbarComponent/Navbar'
 import HomePage from '../HomePageRoute/HomePage'
-import { Outlet } from 'react-router-dom'
-const Layout = () => {
+import { Navigate, Outlet } from 'react-router-dom'
+import { AuthContext } from '../../Context/AuthContext'
+ export const Layout = () => {
   return (
-    <React.Fragment>
+   
     <div className='layout'>
       <div className='navbar'>
       <Navbar/>
@@ -15,8 +16,29 @@ const Layout = () => {
     </div>
     
     </div>
-  </React.Fragment>
+  
   )
   }
+ export const RequireAuth = () => {
+    const {currentUser}= useContext(AuthContext)
 
-export default Layout
+    
+  return !currentUser ? (
+   
+  <Navigate to ="/login"/>
+   ) : (
+    <div className='layout'>
+      <div className='navbar'>
+      <Navbar/>
+      </div>
+    <div className='content'>
+    <Outlet/>
+    </div>
+    
+    </div>
+    )
+   
+  
+  
+  }
+

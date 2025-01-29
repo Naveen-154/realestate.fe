@@ -24,16 +24,19 @@
             justify-content:center;
             
             img{
+                width:50px;
                 @include md{
-width: 30px;
+                  width: 30px;
                 }
                 @include sm{
                     width: 20px;
                 }
-                width: 50px;
+                
                 &.right{
                     transform: rotate(180deg);
                 }
+
+                
             }
            
 
