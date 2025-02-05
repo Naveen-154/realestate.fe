@@ -9,6 +9,7 @@ import RegisterPage from './Routes/RegisterPage/RegisterPage'
 
 import SinglePage from './Routes/singlePage/SinglePage'
 import { Layout, RequireAuth } from './Routes/layout/Layout'
+import ProfileUpdatePage from './Routes/profileUpdatePage/profileUpdatePage'
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ const App = () => {
         {
           path:'/profile',
           element:<ProfilePage/>
+        },
+        {
+          path:'/profile/update',
+          element:<ProfileUpdatePage/>
         },
       ],
     },
