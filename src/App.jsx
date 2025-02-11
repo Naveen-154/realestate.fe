@@ -49,10 +49,10 @@ const App = () => {
           path:'/profile',
           element:<ProfilePage/>
         },
-        {
-          path:'/profile/update',
-          element:<ProfileUpdatePage/>
-        },
+        // {
+        //   path:'/profile/update',
+        //   element:<ProfileUpdatePage/>
+        // },
       ],
     },
   ]);
