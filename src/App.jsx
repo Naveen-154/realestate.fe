@@ -6,7 +6,7 @@ import ListPage from './Routes/ListPageRoute/ListPage'
 import LoginPage from './Routes/LoginPage/LoginPage'
 import ProfilePage from './Routes/ProfilePage/ProfilePage'
 import RegisterPage from './Routes/RegisterPage/RegisterPage'
-import ProfileUpdatePage from './Routes/profileUpdatePage/profileUpdatePage'
+import ProfileUpdatePage from './Routes/ProfileUpdatePage/ProfileUpdatePage'
 
 
 import SinglePage from './Routes/singlePage/SinglePage'

@@ -6,7 +6,7 @@ import '../ProfileUpdatePage/ProfileUpdatePage.scss';
 import apiRequest from "../../library/apiRequest"
 import UploadWidget from '../../Components/UploadWidgets/UploadWidget';
 
-const profileUpdatePage = () => {
+const ProfileUpdatePage = () => {
     const { currentUser, updateUser } = useContext(AuthContext);
   const [error, setError] = useState("");
   const [avatar, setAvatar] = useState(currentUser.avatar);
@@ -82,4 +82,4 @@ const profileUpdatePage = () => {
   );
 }
 
-export default profileUpdatePage
+export default ProfileUpdatePage
