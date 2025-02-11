@@ -5,7 +5,7 @@ import HomePage from './Routes/HomePageRoute/HomePage'
 import ListPage from './Routes/ListPageRoute/ListPage'
 import LoginPage from './Routes/LoginPage/LoginPage'
 import ProfilePage from './Routes/ProfilePage/ProfilePage'
-// import ProfileUpdatePage from './Routes/ProfileUpdatePage/ProfileUpdatePage.jsx'
+import ProfileUpdatePage from './Routes/ProfileUpdatePage/ProfileUpdatePage.jsx'
 import RegisterPage from './Routes/RegisterPage/RegisterPage'
 
 
@@ -49,10 +49,10 @@ const App = () => {
           path:'/profile',
           element:<ProfilePage/>
         },
-        // {
-        //   path:'/profile/update',
-        //   element:<ProfileUpdatePage/>
-        // },
+        {
+          path:'/profile/update',
+          element:<ProfileUpdatePage/>
+        },
       ],
     },
   ]);
